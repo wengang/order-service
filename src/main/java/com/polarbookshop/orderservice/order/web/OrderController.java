@@ -18,7 +18,7 @@ public class OrderController {
 
     @GetMapping
     public Flux<Order> getAllOrders(){
-        return orderService.getAllOrers();
+        return orderService.getAllOrders();
     }
     @PostMapping
     public Mono<Order> submitOrder(@RequestBody @Valid OrderRequest orderRequest){
